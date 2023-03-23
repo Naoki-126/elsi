@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* ===========================
+# mixin
+=========================== */
+/* ===========================
+# colors
+=========================== */
+/* ===========================
+  #  common - 全体の共通するスタイル
+  =========================== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@media screen and (max-width: 767px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+body {
+  font-family: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  background: #F3F3F3;
+  color: #3E3E3E;
+  font-weight: 400;
+}
+
+.section {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0 16px;
+  }
+}
+
+.inner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 16px;
+  }
+}
+
+img {
+  width: 100%;
+  text-decoration: none;
+}
+
+/* util
+=========================== */
+.util-title {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 767px) {
+  .util-title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.util-link {
+  font-size: 20px;
+  color: #3E3E3E;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: .004em;
+  line-height: 1.125;
+  border: 1px solid #707070;
+  display: inline-block;
+  padding: 20px 80px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .util-link {
+    font-size: 18px;
+    padding: 16px 100px;
+  }
+}
+
+.util-link:hover {
+  background: #3E3E3E;
+  color: #fff;
+}
+
+.util-button a {
+  background: #FFAA3B;
+  padding: 16px 50px;
+  width: 282px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: transparent;
+  cursor: pointer;
+  text-align: center;
+  font-family: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .util-button a {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+
+.util-button a:hover {
+  background: #F18900;
+}
+/*# sourceMappingURL=style.css.map */

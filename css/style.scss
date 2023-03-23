@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* ===========================
+# mixin
+=========================== */
+//マップ型変数breakpointsを定義
+//ブレイクポイント キー: 値
+$breakpoints: (
+  'sp': 'screen and (max-width: 767px)',
+  'pc': 'screen and (min-width: 768px)',
+  ) !default;
+
+  //メディアクエリのmixinを定義。デフォ値はsp
+  @mixin mq($breakpoint: sp) {
+    //map-get(マップ型変数, キー)で値を取得
+    @media #{map-get($breakpoints, $breakpoint)}{
+      //この中をカスタム出来る
+      @content;
+    }
+  }
+
+/* ===========================
+# colors
+=========================== */
+$font-color: #3E3E3E; // テキスト
+$color-background-base: #F3F3F3; // 背景
+$primary-color: #4973FF; // ベース
+$accent-color: #FF4646; // アクセント
+$button-color: #FFAA3B; // ボタン色
+
+
+
+  /* ===========================
+  #  common - 全体の共通するスタイル
+  =========================== */
+// スマホだけ非常時
+@include mq(sp) {
+  .is-pc {
+    display: none;
+  }
+}
+
+// PCだけ非常時
+@include mq(pc) {
+  .is-sp {
+    display: none;
+  }
+}
+
+//レイアウト
+$layout-width-canvas: 1280px;
+$layout-width-inner: 1200px;
+
+// ヘッダー高さ
+$header-height-pc: 83px;
+$header-height-sp: 68px;
+
+//フォント
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+$font-family-en: 'Montserrat', sans-serif;
+$font-family-ja:  "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
+$font-family-base: $font-family-ja;
+$font-size-base: 16px;
+$font-weight-base: 400;
+$line-height-base: 1.5;
+
+body {
+  font-family: $font-family-ja;
+  font-size: $font-size-base;
+  background: $color-background-base;
+  color: $font-color;
+  font-weight: $font-weight-base;
+}
+
+.section {
+  margin-top: 60px;
+  margin-bottom: 120px;
+
+  @include mq(sp) {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0 16px;
+  }
+}
+
+.inner {
+  width: $layout-width-inner;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @include mq(sp) {
+    padding: 0 16px;
+  }
+}
+
+img {
+  width: 100%;
+  text-decoration: none;
+}
+
+/* util
+=========================== */
+.util-title {
+  font-size: 36px;
+  font-family: $font-family-en;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+
+  @include mq(sp) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.util-link {
+  font-size: 20px;
+  color: $font-color;
+  font-family: $font-family-en;
+  font-weight: 500;
+  letter-spacing: .004em;
+  line-height: 1.125;
+  border: 1px solid #707070;
+  display: inline-block;
+  padding: 20px 80px;
+  letter-spacing: 2px;
+
+  @include mq(sp) {
+    font-size: 18px;
+    padding: 16px 100px;
+  }
+
+  &:hover {
+    background: $font-color;
+    color: #fff;
+  }
+}
+
+.util-button {
+  a {
+    background: $button-color;
+    padding: 16px 50px;
+    width: 282px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+    text-align: center;
+    font-family: $font-family-ja;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+
+    @include mq(sp) {
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
+    &:hover {
+      background: #F18900;
+    }
+  }
+}
