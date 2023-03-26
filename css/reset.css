@@ -1,27 +1,76 @@
-* {
-  -webkit-box-sizing: border-box;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td,
+small,
+button,
+time,
+figure {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-weight: normal;
-  font-size: 100%;
   vertical-align: baseline;
-  text-decoration: none;
 }
 
-header, footer, nav, section, article, aside, figure, figcaption {
+html {
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li,
+dd {
+  list-style-type: none;
+}
+
+header,
+footer,
+nav,
+section,
+article,
+main,
+aside,
+figure,
+figcaption {
   display: block;
 }
 
-body {
-  line-height: 1;
+img {
+  border: none;
+  vertical-align: bottom;
 }
 
-ol, ul {
-  list-style: none;
-  list-style-type: none;
+a, button {
+  cursor: pointer;
+  text-decoration: none;
 }
