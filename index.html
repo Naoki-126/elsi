@@ -23,24 +23,406 @@
   <!-- jquery & iScroll -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-  <!-- wow -->
-  <script src="/js/wow.min.js"></script>
-  <link rel="stylesheet" href="/css/animate.css">
   <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <!-- original -->
   <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
+  <header class="l-header">
+    <div class="p-header">
+      <div class="p-header__left">
+        <h1 class="p-header__logo"><img src="./image/logo.svg" alt="logo"></h1>
+      </div>
+      <div class="p-header__right">
+      </div>
+    </div>
+  </header>
 
+  <div class="p-drawer__icon">
+    <div id="js-drawer" class="p-drawer__bars">
+      <span class="p-drawer__line"></span>
+      <span class="p-drawer__line"></span>
+      <span class="p-drawer__line"></span>
+    </div>
+    <div class="p-drawer__content">
+      <ul class="p-drawer__lists">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">はじめに</a></li>
+        <li><a href="#">おしらせ</a></li>
+        <li><a href="#">メンバー</a></li>
+        <li><a href="#">イベント</a></li>
+        <li><a href="#">共同研究の成果</a></li>
+      </ul>
+      <div class="p-drawer__button">
+        <div class="c-contact">
+          <div class="c-contact__fa">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="c-contact__text">お問い合わせ</div>
+        </div>
+        <div class="c-lang">
+          <div class="c-lang__text">japanese</div>
+          <div class="c-lang__en">English</div>
+        </div>
+      </div>
+    </div>
+    <div class="p-drawer__background">
+    </div>
+  </div>
 
+  <section class="l-side">
+    <div class="p-side">
+      <h1 class="p-side__title">
+        <a href="#" class="p-side__logo"><img src="./image/logo.svg" alt="ELSI"></a>
+      </h1>
+      <div class="p-side__menu">
+        <div class="p-side__nav">ホーム</div>
+        <div class="p-side__nav -top">はじめに</div>
+        <div class="p-side__nav -info">お知らせ</div>
+        <div class="p-side__nav -men">メンバー</div>
+        <div class="p-side__nav ev">イベント</div>
+        <div class="p-side__nav -re">共同研究の成果</div>
+      </div>
+      <div class="c-contact">
+        <div class="c-contact__fa">
+          <i class="far fa-envelope"></i>
+        </div>
+        <div class="c-contact__text">お問い合わせ</div>
+      </div>
+      <div class="c-lang">
+        <div class="c-lang__text">japanese</div>
+        <div class="c-lang__text">English</div>
+      </div>
+      <div class="p-side__footer">&copy; YOKOHAMA NATIONAL UNIVERSITY</div>
+    </div>
+  </section>
+  <section class="l-main">
+    <div class="p-main">
+      <video src="./image/main-mov.webm"></video>
+      <div class="p-main__news">
+        <div class="p-main__title">重要なお知らせ</div>
+        <div class="p-main__date">2023.02.01</div>
+        <div class="c-category -section1">CATEGORY</div>
+        <div class="p-main__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+      </div>
+    </div>
+  </section>
+  <section class="l-info">
+    <div class="l-info__background">
+      <div class="p-info">
+        <div class="p-info__left">
+          <div class="p-info__title">
+            <h2 class="u-title">お知らせ</h2>
+            <h3 class="u-subTitle -section2">Information</h3>
+          </div>
+          <div class="p-info__more">
+            <div class="c-btn">もっと見る</div>
+          </div>
+        </div>
+        <div class="p-info__right">
+          <div class="p-info__cards">
 
+            <div class="wraper">
+              <div class="swiper">
+                <div class="swiper-wrapper">
 
-  <div class="to-top"><a href="#"><img src="/img/totop.png" alt="to-top"></a></div>
+                  <div class="swiper-slide">
+                    <div class="p-info__case">
+                      <div class="p-info__card">
+                        <div class="p-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+                        <div class="p-card__content">
+                          <div class="p-card__category">
+                            <div div class="c-category -section1">CATEGORY</div>
+                            <div class="p-card__date">2023.02.01</div>
+                          </div>
+                          <div class="p-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+                        </div>
+                        <div class="p-info__card-more">
+                          <div class="c-btn -info">もっと見る</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-info__case">
+                      <div class="p-info__card">
+                        <div class="p-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+                        <div class="p-card__content">
+                          <div class="p-card__category">
+                            <div div class="c-category -section1">CATEGORY</div>
+                            <div class="p-card__date">2023.02.01</div>
+                          </div>
+                          <div class="p-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+                        </div>
+                        <div class="p-info__card-more">
+                          <div class="c-btn -info">もっと見る</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-info__case">
+                      <div class="p-info__card">
+                        <div class="p-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+                        <div class="p-card__content">
+                          <div class="p-card__category">
+                            <div div class="c-category -section1">CATEGORY</div>
+                            <div class="p-card__date">2023.02.01</div>
+                          </div>
+                          <div class="p-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+                        </div>
+                        <div class="p-info__card-more">
+                          <div class="c-btn -info">もっと見る</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-scrollbar"></div>
+                <div class="temp"></div>
+                <div class="scroll"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="l-about">
+    <div class="p-about">
+      <div class="p-about__img">
+        <img src="./image/about.png" alt="about-pic">
+
+      </div>
+      <div class="p-about__contents">
+        <div class="p-about__content">
+          <div class="p-about__title">「新規技術と法研究会」（通称：横浜ELSI研究会）について</div>
+          <p class="p-about__text">2022年9月、横浜国立大学大学院国際社会科学研究院・国際経済法学専攻所属教員を中心に、「新規技術と法研究会」（通称：横浜ELSI研究会）が立ち上げられました。<br> ELSIとは、「倫理的・法的・社会的課題（Ethical, Legal and Social Issues）」のアクロニムであり、ある新規科学技術の開発や社会実装がもたらす可能性のある様々な非技術的課題を多角的に分析し、当該技術による望ましい社会の実現に向けて責任ある研究・イノベーション（Responsible Research and Innovation, RRI)を牽引する役割を担う学術的領域です。 <br>横浜ELSI研究会では、法学・政治学にとどまらず、様々なバックグラウンドを持つ方々のご参画により得られる総合知に基づいて、これからの新規技術と社会のあり方を検討していきます。 さらに本研究会は、研究開発現場との対話などを通じて、様々な社会課題と新規科学技術によるその解決とをつなぐ場（フォーラム）として機能することを目指しています。</p>
+          <div class="p-about__footer">YNU Research Group on ELSI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="l-event">
+    <div class="p-event__more">
+      <div class="p-event__center">
+        <h2 class="u-title">イベント</h2>
+        <h3 class="u-subTitle -section2">Event</h3>
+      </div>
+    </div>
+    <div class="l-event__background">
+      <div class="p-event">
+        <div class="p-event__dummy"></div>
+        <div class="p-event__cards">
+          <div class="c-card">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section2">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -event">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section2">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -event">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section2">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -event">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section2">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -event">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section2">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -event">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section2">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -event">もっと見る</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-event__more">
+      <div class="p-event__center">
+        <div class="c-btn -section2">もっと見る</div>
+      </div>
+    </div>
+  </section>
+  <section class="l-report">
+    <div class="p-report__more">
+      <div class="p-report__center">
+        <h2 class="u-title">共同研究の成果</h2>
+        <h3 class="u-subTitle -section3">Report</h3>
+      </div>
+    </div>
+    <div class="l-report__background">
+      <div class="p-report">
+        <div class="p-report__dummy"></div>
+        <div class="p-report__cards">
+          <div class="c-card -report">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section3">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -report">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card -report">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section3">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -report">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card -report">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section3">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -report">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card -report">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section3">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -report">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card -report">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section3">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -report">もっと見る</div>
+            </div>
+          </div>
+          <div class="c-card -report">
+            <div class="c-card__img"><img src="./image/thumb-blank.png" alt="info"></div>
+            <div class="c-card__content">
+              <div class="c-card__category">
+                <div class="c-category -section3">CATEGORY</div>
+                <div class="c-card__date">2023.02.01</div>
+              </div>
+              <div class="c-card__text">お知らせが入ります。このテキストはサンプルです。実際の内容とは異なります。</div>
+            </div>
+            <div class="c-card__more">
+              <div class="c-btn -report">もっと見る</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-report__more">
+      <div class="p-report__center">
+        <div class="c-btn -section3">もっと見る</div>
+      </div>
+    </div>
+  </section>
+  <section class="l-banner">
+    <div class="p-banner">
+      <div class="p-banner__item"><img class="p-banner_1" src="./image/banner-ynu.png" alt="ynu"></div>
+      <div class="p-banner__item"><img class="p-banner_2" src="./image/banner-trc.png" alt="trc"></div>
+      <div class="p-banner__item"><img class="p-banner_3" src="./image/banner-typhoonshot.png" alt="typhoonshot"></div>
+      <div class="p-banner__item"></div>
+      <div class="p-banner__item"></div>
+      <div class="p-banner__item"></div>
+    </div>
+  </section>
+  <footer class="l-footer">
+    <div class="p-footer">
+      <div class="p-footer__name">株式会社コームラ</div>
+      <div class="p-footer__address">〒166-0003<br> 東京都杉並区高円寺南4-19-3<br class="is-sp"> 総和第二ビル2階<br> TEL: 03-5377-1336／FAX: 03-5377-1338</div>
+      <div class="p-footer__copyright">© YOKOHAMA NATIONAL UNIVERSITY</div>
+    </div>
+  </footer>
+
+  <div class="u-toTop"><a href="#"><img src="./image/to-top.png" alt="to-top"></a></div>
   <!-- /.to-top -->
-
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="/js/script.js"></script>
-</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </html>
