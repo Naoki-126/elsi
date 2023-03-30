@@ -570,10 +570,20 @@ img {
   height: auto;
   border-radius: 0 0 20px 20px;
 }
-@media screen and (max-width: 767px) {
-  .p-main {
-    display: none;
-  }
+
+.p-main__video {
+  position: relative;
+  padding-bottom: 80%;
+  height: 0;
+  overflow: hidden;
+}
+
+.p-main__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1520px;
+  height: auto;
 }
 
 .p-main__news {
@@ -1145,4 +1155,4 @@ img {
 }
 .scroll:hover {
   opacity: 0.8;
-}/*# sourceMappingURL=style.css.map */
+}
